@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shivang.bartdata.ui.MainView"
+    android:background="#FFFFFF">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <TableRow
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textViewFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From : "
+                android:textColor="@color/colorBlack"/>
+
+            <Spinner
+                android:id="@+id/spinnerFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+        <TableRow
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textViewTo"
+                android:layout_below="@+id/textViewFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To : "
+                android:textColor="@color/colorBlack"/>
+
+            <Spinner
+                android:id="@+id/spinnerTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fare : "
+                android:textColor="@color/colorBlack"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textColor="@color/colorBlack"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="One Way : "
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:id="@+id/textOneWay"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Two Way : "
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:id="@+id/textTwoWay"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
